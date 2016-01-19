@@ -1,0 +1,10 @@
+# Buil settings
+markdown: kramdown
+permalink: pretty
+
+include: ['_includes/work']
+
+# SASS
+sass:
+  sass_dir: assets/css
+  style: :compressed

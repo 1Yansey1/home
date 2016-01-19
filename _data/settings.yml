@@ -1,0 +1,59 @@
+# Portfolio settings
+title: 'SyNDS'
+subtitle: 'Innovación y Tecnología, la base de una gran idea.'
+email: 'synd.systems@gmail.com'
+copy: 'Software & Network Design Systems S. de R.L. de C.V. Ⓒ Todos los Derechos Reservados 2015'
+logo: 'logo.svg'
+background: 'tijuana-cover.jpg'
+back-footer: 'playas1.jpg'
+
+# Site default images and content
+blurb: >
+  Más que una empresa, somos un equipo de trabajo donde nuestra principal misión es ofrecer soluciones tecnológicas a
+  nuestros clientes con el fin de mejorar y automatizar sus procesos. Además de ofrecer consultaría a nuestros clientes
+  para darles la mejor opción en cuestiones tecnológicas y de servicio.
+
+# Menu settings
+menu:
+- {name: '¿Quiénes somos?', url: '#who-we-are'}
+- {name: 'Trabajos', url: '#work'}
+- {name: 'Clientes', url: '#clients'}
+- {name: 'Sociales', url: '#social'}
+- {name: 'Contacto', url: '#contact'}
+
+# Skills settings
+skills:
+- {name: 'Comunicación', value: '8'}
+- {name: 'Organización', value: '7'}
+- {name: 'Aprendizaje', value: '9'}
+- {name: 'Planeación', value: '7'}
+- {name: 'Diseño UX/UI', value: '5'}
+- {name: 'Análisis', value: '7'}
+- {name: 'Programación', value: '9'}
+- {name: 'Responsabilidad', value: '9'}
+
+# Projects settings
+projects:
+- {name: 'Informes Salud', folder: 'proj-1'}
+- {name: "Jaguare's News", folder: 'proj-2'}
+- {name: 'SiCINBC', folder: 'proj-3'}
+- {name: 'Tu Proyecto', folder: 'proj-4'}
+- {name: 'Tu Proyecto', folder: 'proj-5'}
+- {name: 'Tu Proyecto', folder: 'proj-6'}
+- {name: 'Tu Proyecto', folder: 'proj-7'}
+- {name: 'Tu Proyecto', folder: 'proj-8'}
+
+# Clients settings
+clients:
+- {avatar: 'alberto-reyes.jpg', company-logo: 'logoSSBC.png', name: 'Alberto Reyes Firman', title: 'Ing. Computación - ISESALUD', quote: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
+- {avatar: 'face-aaroni.jpg', company-logo: 'cnnlogo.png', name: 'Face Aaroni', title: 'CEO - Aaroni Inc.', quote: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
+- {avatar: 'face-atariboy.jpg', company-logo: 'lazaro-jaguar.png', name: 'Face Atariboy', title: 'CEO - Atariboy Inc.', quote: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
+- {avatar: 'face-jackiesaik.jpg', company-logo: 'logo3.png', name: 'Face Jackiesaik', title: 'CEO - Jackiesaik Inc.', quote: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
+
+# Contact settings
+social:
+- {icon: 'facebook', url: 'http://www.facebook.com/SNDs-754905897926725/'}
+- {icon: 'twitter', url: 'http://www.twitter.com/'}
+- {icon: 'youtube-play', url: 'http://www.youtube.com/'}
+- {icon: 'linkedin', url: 'https://www.linkedin.com/'}
+- {icon: 'github-alt', url: 'https://www.github.com/'}

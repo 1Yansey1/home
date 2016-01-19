@@ -1,0 +1,106 @@
+h3
+  padding: 50px 0 30px
+  @extend %small-bold
+  color: $accent-light
+  text-transform: uppercase
+  text-align: center
+
+.about
+  max-width: 780px
+  +display(flex)
+  margin: 0 auto
+  +align-items(center)
+  +justify-content(space-around)
+
+  .avatar
+    +size(150px)
+    border-radius: 50%
+    background: url(../img/myself.jpg) center center
+    background-size: cover
+    +order(3)
+
+  [class^="icon-"]
+    +size(100px)
+    background: $back-color
+    border-radius: 50%
+
+    path
+      fill: $accent-dark
+
+    &.icon-pencil
+      +order(1)
+    &.icon-mouse
+      +order(2)
+    &.icon-browser
+      +order(4)
+    &.icon-video
+      +order(5)
+
+@media screen and (max-width: 650px)
+  .about
+    display: block
+    text-align: center
+
+    div
+      display: inline-block
+
+    .avatar
+      display: block
+      background-position: center center
+      background-repeat: no-repeat
+      margin: 0 auto 30px
+
+    [class^="icon-"]
+      margin: 10px
+
+.blurb
+  max-width: 640px
+  padding: 0 10px
+  margin: 50px auto 50px
+  font-size: 24px
+  text-align: justify
+  font-weight: 300
+
+.skills
+  max-width: 540px
+  margin: 100px auto
+  color: #999
+  +clearfix
+
+
+  .skill-unit
+    width: 270px
+    float: left
+
+  .skill-level
+    font-size: 0
+    margin: 3px 0 30px
+
+    span
+      display: inline-block
+      +size(14px)
+      background-color: $accent-dark
+      margin-right: 8px
+      border-radius: 50%
+
+      &:after
+        content: ''
+        display: block
+        +size(10px)
+        background: #fff
+        border-radius: 50%
+        margin: 2px
+
+    @for $i from 1 through 10
+      &.level-#{$i} span:nth-child(n+#{$i+1})
+        @extend %level-color
+
+%level-color
+  background: $back-color
+
+@media screen and (max-width: 541px)
+  .skills
+    width: 220px
+
+    .skill-unit
+      width: 220px

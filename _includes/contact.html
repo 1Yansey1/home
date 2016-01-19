@@ -1,0 +1,12 @@
+<section class="contact-section">
+  <h3 id="contact">Trabajemos juntos, contactanos</h3>
+
+  <form action="//formspree.io/{{ site.data.settings.email }}" method="POST">
+    <div class="contact-info">
+      <label><span>Tu nombre</span><input type="text" name="name"></label>
+      <label><span>Tu correo electrónico</span><input type="email" name="_replyto"></label>
+    </div>
+    <label><span>Cuentanos sobre tu proyecto</span><textarea name="message"></textarea></label>
+    <input type="submit" value="Enviar">
+  </form>
+</section>

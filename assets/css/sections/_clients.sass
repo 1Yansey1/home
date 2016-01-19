@@ -1,0 +1,145 @@
+.clients-section
+  position: relative
+
+.clients-belt
+  width: 100%
+  position: relative
+
+  .client-item
+    max-width: 750px
+    margin: 50px auto
+    position: relative
+    z-index: 1
+    display: none
+
+    &.active
+      +display(flex)
+
+    .client-info
+      min-width: 180px
+      text-align: center
+
+      img
+        max-width: 100px
+        border-radius: 50%
+
+      .client-name
+        display: block
+        text-transform: uppercase
+        font-weight: 400
+        letter-spacing: 1px
+
+      .client-title
+        font-style: normal
+        font-size: 12px
+        color: #999
+
+    .client-opinion
+      font-size: 18px
+      line-height: 36px
+      font-weight: 300
+      margin-top: -10px
+      position: relative
+
+// Logos
+.clients-company
+  position: relative
+  z-index: 3
+  max-width: 750px
+  margin: 0px auto 100px
+  +display(flex)
+  +align-items(flex-end)
+  +justify-content(space-around)
+
+
+  .client-company
+    max-width: 200px
+    cursor: pointer
+    margin: 0 20px 20px
+    padding-bottom: 20px
+    border-bottom: 4px solid transparent
+    opacity: 0.5
+
+    &.active
+      opacity: 1
+      //border-bottom: 4px solid $accent-dark
+
+.quote-mark
+  +position(absolute, -18px null null -15px)
+  +size(60px)
+  z-index: -1
+  opacity: 0.3
+
+  path
+    fill: $accent-dark
+
+// Controls
+.client-nav
+  +position(absolute, 0px 0px 0px 0px)
+  z-index: 2
+
+  > div
+    +size(40px)
+    margin-top: -20px
+    cursor: pointer
+
+    path
+      fill: $accent-dark
+
+  .next
+    +position(absolute, 50% 10px null null)
+
+  .prev
+    +position(absolute, 50% null null 10px)
+
+// clients-mobile-nav
+.client-mobile-nav
+  text-align: center
+  position: relative
+  z-index: 3
+  display: none
+
+  span
+    display: inline-block
+    +size(16px)
+    border-radius: 50%
+    border: solid 2px $back-color
+    margin: 0px 10px
+    cursor: pointer
+
+    &.active
+      border-color: $accent-dark
+
+@media (max-width: 850px)
+  .clients-company
+    +flex-wrap(wrap)
+
+  .clients-belt
+    overflow-x: hidden
+
+    .client-item.active
+      display: block
+      position: relative
+      margin-left: auto
+      left: auto
+
+      .client-info
+        margin-bottom: 30px
+
+      .client-opinion
+        padding: 0px 30px
+        max-width: 400px
+        margin: 0px auto
+
+      .quote-mark
+        left: 6px
+
+  .clients-company
+    display: none
+
+  .client-mobile-nav
+    display: block
+
+@media (max-width: 600px)
+  .client-nav
+    display: none

@@ -1,0 +1,25 @@
+footer
+  @extend %background-image
+  background-image: url(../img/logo.svg), url(../img/playas1.jpg)
+
+  .lockup
+    padding: 50px 30px
+    +clearfix
+
+    .content-wrap
+      float: left
+      margin-left: 80px
+
+      .copyright
+        margin: 0
+        font-size: 14px
+        color: rgba(0,0,0,0.5)
+
+      a
+        @extend %nav-items
+        color: rgba(0,0,0,0.5)
+        display: inline-block
+        margin-right: 30px
+
+        &:hover
+          color: rgba(0,0,0,0.7)

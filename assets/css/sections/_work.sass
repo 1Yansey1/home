@@ -1,0 +1,102 @@
+.work-section
+  overflow-x: hidden
+
+.work-belt
+  width: 200%
+  position: relative
+  left: 0%
+  +transition(all, 800ms)
+
+  &.slided
+    +transform(translate3d(-50%, 0, 0))
+
+.thumb-wrap, .work-wrap
+  width: 50%
+  float: left
+
+.thumb-container
+  max-width: 960px
+  margin: 0px auto
+  padding-bottom: 100px
+  +clearfix
+
+  .thumb-item
+    display: block
+    overflow: hidden
+    position: relative
+    float: left
+    width: 25%
+    cursor: pointer
+    padding-top: 15%
+    background:
+      position: center center
+      repeat: no-repeat
+      size: cover
+
+    @media screen and (max-width: 760px)
+      width: 50%
+      padding-top: 25%
+
+    .thumb-overlay
+      +position(absolute, 100% 0px null 0px)
+      +align-items(center)
+      +justify-content(space-around)
+      +display(flex)
+      +transition(300ms)
+      height: 100%
+      background: transparentize($accent-dark, 0.1)
+      text-align: center
+
+      strong
+        display: block
+        padding: 0px 9%
+        color: white
+        font:
+          weight: 300
+          size: 24px
+        line-height: 1.2
+
+    &:hover .thumb-overlay
+      +position(absolute, 0% 0px null 0px)
+
+.work-container
+  display: none
+  max-width: 600px
+  margin: 0px auto
+  padding: 0 15px
+  box-sizing: border-box
+  position: relative
+
+  .thumb-return
+    +size(40px)
+    cursor: pointer
+    opacity: 0.5
+    +position(absolute, -4px null null -60px)
+
+    path
+      fill: rgba(0,0,0,0.4)
+
+    &:hover
+      opacity: 1
+
+  h4
+    color: $accent-dark
+    font:
+      weight: 300
+      size: 28px
+    text-transform: uppercase
+    line-height: 1.2
+    margin: 0 0 20px
+
+  img
+    max-width: 100%
+    margin-bottom: 20px
+
+@media (max-width: 740px)
+  .work-container
+
+    .thumb-return
+      left: 0px
+
+    h4
+      margin-left: 60px

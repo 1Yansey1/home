@@ -1,0 +1,13 @@
+<section class="social-section">
+  <h3 id="social">Sociales</h3>
+
+  <div class="social-media">
+    {% for link in site.data.settings.social %}
+      <a href="{{ link.url }}" class="fa fa-{{ link.icon }}" target="_blank"></a>
+    {% endfor %}
+  </div>
+
+  <hr class="bar">
+
+  <a href="mailto:{{ site.data.settings.email }}" class="email-link">{{ site.data.settings.email }}</a>
+</section>
