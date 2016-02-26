@@ -2,11 +2,24 @@
   <h3 id="who-we-are">¿Quiénes somos?</h3>
 
   <div class="about">
-    <div class="avatar"></div>
+    {% for avatar in site.data.settings.avatars %}
+      <div>
+        <figure class="avatar-info">
+          <a class="avatar-ref" href="{{ avatar.url }}" target="_target">
+            <img class="avatar-{{ avatar.class }}" src="assets/img/{{ avatar.img }}">
+          </a>
+          <figcaption>
+            <strong class="avatar-name">{{ avatar.name }}</strong>
+          </figcaption>
+        </figure>
+      </div>
+    {% endfor %}
+
+    <!-- <div class="avatar"></div>
     <div class="icon-pencil">{% include icons/icon-pencil.html %}</div>
     <div class="icon-mouse">{% include icons/icon-mouse.html %}</div>
     <div class="icon-browser">{% include icons/icon-browser.html %}</div>
-    <div class="icon-video">{% include icons/icon-video.html %}</div>
+    <div class="icon-video">{% include icons/icon-video.html %}</div> -->
   </div>
 
   <div class="blurb">

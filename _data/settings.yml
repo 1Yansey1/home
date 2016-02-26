@@ -3,7 +3,7 @@ title: 'SyNDS'
 subtitle: 'Innovación y Tecnología, la base de una gran idea.'
 email: 'synd.systems@gmail.com'
 copy: 'Software & Network Design Systems S. de R.L. de C.V. Ⓒ Todos los Derechos Reservados 2015'
-logo: 'logo.svg'
+logo: 'synds-bc.svg'
 background: 'tijuana-cover.jpg'
 back-footer: 'playas1.jpg'
 
@@ -20,6 +20,15 @@ menu:
 - {name: 'Clientes', url: '#clients'}
 - {name: 'Sociales', url: '#social'}
 - {name: 'Contacto', url: '#contact'}
+
+# About settings
+avatars:
+- {name: 'Adrián Ordaz', class: 'adrian-ordaz', img: 'adrian-synds.jpg', url: 'https://mx.linkedin.com/in/adrian-ordaz-zamora-0a6351b2'}
+- {name: 'Raymundo Resendez', class: 'ray-resendez', img: 'ray-synds.jpg', url: '#'}
+- {name: 'Alejandro Rojas', class: 'alex-rojas', img: 'alex-synds.jpg', url: 'https://mx.linkedin.com/in/alejandro-rojas-538413ab'}
+- {name: 'José Domínguez', class: 'jose-dguez', img: 'myself.jpg', url: 'https://mx.linkedin.com/in/joseantoniodguez'}
+- {name: 'Miguel Serrano', class: 'miguel-serrano', img: 'miguel-synds.jpg', url: 'https://mx.linkedin.com/in/miguel-angel-serrano-guzmán-026080101'}
+- {name: 'Yansey Domínguez', class: 'yansey-dguez', img: 'yansey-synds.jpg', url: 'https://mx.linkedin.com/in/yansey-dominguez-223009b8'}
 
 # Skills settings
 skills:
@@ -45,7 +54,7 @@ projects:
 
 # Clients settings
 clients:
-- {avatar: 'alberto-reyes.jpg', company-logo: 'logoSSBC.png', name: 'Alberto Reyes Firman', title: 'Ing. Computación - ISESALUD', quote: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
+- {avatar: 'alberto-reyes.jpg', company-logo: 'logoSSBC.png', name: 'Ing. Alberto Reyes', title: 'Ing. Computación - ISESALUD', quote: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
 - {avatar: 'face-aaroni.jpg', company-logo: 'cnnlogo.png', name: 'Face Aaroni', title: 'CEO - Aaroni Inc.', quote: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
 - {avatar: 'face-atariboy.jpg', company-logo: 'lazaro-jaguar.png', name: 'Face Atariboy', title: 'CEO - Atariboy Inc.', quote: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
 - {avatar: 'face-jackiesaik.jpg', company-logo: 'logo3.png', name: 'Face Jackiesaik', title: 'CEO - Jackiesaik Inc.', quote: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'}
@@ -56,4 +65,4 @@ social:
 - {icon: 'twitter', url: 'http://www.twitter.com/'}
 - {icon: 'youtube-play', url: 'http://www.youtube.com/'}
 - {icon: 'linkedin', url: 'https://www.linkedin.com/'}
-- {icon: 'github-alt', url: 'https://www.github.com/'}
+- {icon: 'github-alt', url: 'https://github.com/SyNDS'}

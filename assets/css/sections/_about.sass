@@ -5,36 +5,55 @@ h3
   text-transform: uppercase
   text-align: center
 
+figure
+  margin: 0
+  padding: 0
+
 .about
-  max-width: 780px
+  max-width: 860px
   +display(flex)
   margin: 0 auto
   +align-items(center)
   +justify-content(space-around)
 
-  .avatar
-    +size(150px)
-    border-radius: 50%
-    background: url(../img/myself.jpg) center center
-    background-size: cover
-    +order(3)
+  .avatar-info
+    text-align: center
 
-  [class^="icon-"]
-    +size(100px)
-    background: $back-color
-    border-radius: 50%
+    .avatar-ref
+      display: block
+      height: 100%
+      width: 100%
 
-    path
-      fill: $accent-dark
+      [class^="avatar-"]
+        +size(125px)
+        border-radius: 100%
+        background-size: auto
 
-    &.icon-pencil
-      +order(1)
-    &.icon-mouse
-      +order(2)
-    &.icon-browser
-      +order(4)
-    &.icon-video
-      +order(5)
+        &.avatar-adrian-ordaz
+          +order(1)
+          border: 1.5px solid $accent-light
+          background: url(../img/adrian-synds.jpg)
+
+        &.avatar-ray-resendez
+          +order(2)
+          border: 1.5px solid $accent-light
+          background: url(../img/ray-synds.jpg) left center
+        &.avatar-alex-rojas
+          +order(3)
+          border: 1.5px solid $accent-light
+          background: url(../img/alex-synds.jpg) right top
+        &.avatar-jose-dguez
+          +order(4)
+          border: 1.5px solid $accent-light
+          background: url(../img/myself.jpg) left top
+        &.avatar-miguel-serrano
+          +order(5)
+          border: 1.5px solid $accent-light
+          background: url(../img/miguel-synds.jpg)
+        &.avatar-yansey-dguez
+          +order(6)
+          border: 1.5px solid $accent-light
+          background: url(../img/yansey-synds.jpg) center center
 
 @media screen and (max-width: 650px)
   .about

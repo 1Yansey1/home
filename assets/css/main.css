@@ -2401,11 +2401,11 @@ header, footer {
   background-repeat: no-repeat, no-repeat;
   background-size: 50px 50px, cover;
   background-position: 30px 50px, 50% 50%;
-  background-blend-mode: overlay, normal; }
+  background-blend-mode: normal, normal; }
 
 header {
   background-position: 30px 20px, 50% 50%;
-  background-image: url(../img/logo.svg), url(../img/tijuana-cover.jpg);
+  background-image: url(../img/synds-bc.svg), url(../img/tijuana-cover.jpg);
   padding-bottom: 100px; }
   header .logo {
     height: 50px;
@@ -2457,8 +2457,12 @@ h3 {
   text-transform: uppercase;
   text-align: center; }
 
+figure {
+  margin: 0;
+  padding: 0; }
+
 .about {
-  max-width: 780px;
+  max-width: 860px;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -2485,58 +2489,77 @@ h3 {
   -o-justify-content: space-around;
   justify-content: space-around;
   -ms-flex-pack: distribute; }
-  .about .avatar {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    background: url(../img/myself.jpg) center center;
-    background-size: cover;
-    -webkit-box-ordinal-group: 3;
-    -moz-box-ordinal-group: 3;
-    box-ordinal-group: 3;
-    -webkit-order: 3;
-    -moz-order: 3;
-    order: 3;
-    -ms-flex-order: 3; }
-  .about [class^="icon-"] {
-    height: 100px;
-    width: 100px;
-    background: #E5EAEE;
-    border-radius: 50%; }
-    .about [class^="icon-"] path {
-      fill: #C99065; }
-    .about [class^="icon-"].icon-pencil {
-      -webkit-box-ordinal-group: 1;
-      -moz-box-ordinal-group: 1;
-      box-ordinal-group: 1;
-      -webkit-order: 1;
-      -moz-order: 1;
-      order: 1;
-      -ms-flex-order: 1; }
-    .about [class^="icon-"].icon-mouse {
-      -webkit-box-ordinal-group: 2;
-      -moz-box-ordinal-group: 2;
-      box-ordinal-group: 2;
-      -webkit-order: 2;
-      -moz-order: 2;
-      order: 2;
-      -ms-flex-order: 2; }
-    .about [class^="icon-"].icon-browser {
-      -webkit-box-ordinal-group: 4;
-      -moz-box-ordinal-group: 4;
-      box-ordinal-group: 4;
-      -webkit-order: 4;
-      -moz-order: 4;
-      order: 4;
-      -ms-flex-order: 4; }
-    .about [class^="icon-"].icon-video {
-      -webkit-box-ordinal-group: 5;
-      -moz-box-ordinal-group: 5;
-      box-ordinal-group: 5;
-      -webkit-order: 5;
-      -moz-order: 5;
-      order: 5;
-      -ms-flex-order: 5; }
+  .about .avatar-info {
+    text-align: center; }
+    .about .avatar-info .avatar-ref {
+      display: block;
+      height: 100%;
+      width: 100%; }
+      .about .avatar-info .avatar-ref [class^="avatar-"] {
+        height: 125px;
+        width: 125px;
+        border-radius: 100%;
+        background-size: auto; }
+        .about .avatar-info .avatar-ref [class^="avatar-"].avatar-adrian-ordaz {
+          -webkit-box-ordinal-group: 1;
+          -moz-box-ordinal-group: 1;
+          box-ordinal-group: 1;
+          -webkit-order: 1;
+          -moz-order: 1;
+          order: 1;
+          -ms-flex-order: 1;
+          border: 1.5px solid #e1c285;
+          background: url(../img/adrian-synds.jpg); }
+        .about .avatar-info .avatar-ref [class^="avatar-"].avatar-ray-resendez {
+          -webkit-box-ordinal-group: 2;
+          -moz-box-ordinal-group: 2;
+          box-ordinal-group: 2;
+          -webkit-order: 2;
+          -moz-order: 2;
+          order: 2;
+          -ms-flex-order: 2;
+          border: 1.5px solid #e1c285;
+          background: url(../img/ray-synds.jpg) left center; }
+        .about .avatar-info .avatar-ref [class^="avatar-"].avatar-alex-rojas {
+          -webkit-box-ordinal-group: 3;
+          -moz-box-ordinal-group: 3;
+          box-ordinal-group: 3;
+          -webkit-order: 3;
+          -moz-order: 3;
+          order: 3;
+          -ms-flex-order: 3;
+          border: 1.5px solid #e1c285;
+          background: url(../img/alex-synds.jpg) right top; }
+        .about .avatar-info .avatar-ref [class^="avatar-"].avatar-jose-dguez {
+          -webkit-box-ordinal-group: 4;
+          -moz-box-ordinal-group: 4;
+          box-ordinal-group: 4;
+          -webkit-order: 4;
+          -moz-order: 4;
+          order: 4;
+          -ms-flex-order: 4;
+          border: 1.5px solid #e1c285;
+          background: url(../img/myself.jpg) left top; }
+        .about .avatar-info .avatar-ref [class^="avatar-"].avatar-miguel-serrano {
+          -webkit-box-ordinal-group: 5;
+          -moz-box-ordinal-group: 5;
+          box-ordinal-group: 5;
+          -webkit-order: 5;
+          -moz-order: 5;
+          order: 5;
+          -ms-flex-order: 5;
+          border: 1.5px solid #e1c285;
+          background: url(../img/miguel-synds.jpg); }
+        .about .avatar-info .avatar-ref [class^="avatar-"].avatar-yansey-dguez {
+          -webkit-box-ordinal-group: 6;
+          -moz-box-ordinal-group: 6;
+          box-ordinal-group: 6;
+          -webkit-order: 6;
+          -moz-order: 6;
+          order: 6;
+          -ms-flex-order: 6;
+          border: 1.5px solid #e1c285;
+          background: url(../img/yansey-synds.jpg) center center; }
 
 @media screen and (max-width: 650px) {
   .about {
@@ -3018,7 +3041,7 @@ form {
     form .contact-info label:nth-child(2) {
       padding: 0; } }
 footer {
-  background-image: url(../img/logo.svg), url(../img/playas1.jpg); }
+  background-image: url(../img/synds-bc.svg), url(../img/playas1.jpg); }
   footer .lockup {
     padding: 50px 30px; }
     footer .lockup::after {
